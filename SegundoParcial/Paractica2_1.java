@@ -27,7 +27,7 @@ import java.util.Scanner;
             System.out.println("");
             for (int col = 0; col <= arreglo.length - 1; col++){
                 for (int fil = 0; fil <= arreglo.length -1; fil++){
-                    if (arreglo[col][fil] > mayor){S
+                    if (arreglo[col][fil] > mayor){
                         mayor = arreglo[col][fil];
                     }else{
                         mayor = mayor;
