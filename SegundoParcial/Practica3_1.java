@@ -1,6 +1,6 @@
 package SegundoParcial;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Practica3_1 {
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public class Practica3_1 {
         //Acomodar a el mayor en la primera posicon
         for (int i = 0; i <= arreglo.length -1; i++){
             if (arreglo[i] == mayor) {
-                for (int j = i; j > arreglo.length - 1; j++) {
+                for (int j = i; j < arreglo.length - 1; j++) {
                     arreglo[j] = arreglo[j + 1];
                 }
                 arreglo[arreglo.length - 1] = mayor;
