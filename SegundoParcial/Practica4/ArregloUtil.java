@@ -3,7 +3,13 @@ package SegundoParcial.Practica4;
 import java.util.Random;
 
 public class ArregloUtil {
-    public static void desordenarArreglo(int[] arreglo) {
+    int arreglo[] = new int[5];
+    public  void llenarArreglo(int[] arre){
+        for (int i = 0; i >= arreglo.length - 1; i++) {
+             arreglo[i] =arre[i];
+        }
+    }
+    public  int[] desordenarArreglo(int[] arreglo) {
         Random rnd = new Random();
 
         for (int i = arreglo.length - 1; i > 0; i--) {
@@ -12,9 +18,10 @@ public class ArregloUtil {
             arreglo[index] = arreglo[i];
             arreglo[i] = temp;
         }
+        return arreglo;
     }
 
-    public static void ordenarArreglo(int[] arreglo) {
+    public  int[] ordenarArreglo(int[] arreglo) {
         for (int i = 0; i < arreglo.length - 1; i++) {
             for (int j = 0; j < arreglo.length - i - 1; j++) {
                 if (arreglo[j] > arreglo[j + 1]) {
@@ -24,9 +31,11 @@ public class ArregloUtil {
                 }
             }
         }
+        return arreglo;
+
     }
 
-    public static void imprimirArreglo(int[] arreglo) {
+    public  void imprimirArreglo(int[] arreglo) {
         for (int i = 0; i < arreglo.length; i++) {
             System.out.print("\t" + arreglo[i]);
         }
